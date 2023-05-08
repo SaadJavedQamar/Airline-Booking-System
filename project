@@ -1,0 +1,327 @@
+#include<stdio.h>
+#include<stdio.h>
+#include<conio.h>
+#include <stdlib.h>
+#include<string.h>                  
+#include<time.h>
+
+struct flight{
+    int ticket;
+    int price;
+};
+
+
+main(){
+	 int n;
+	 char name[100],date[100],address[100],p_no[100],nic[100],a_no[100],dep[100],ari[100];
+	 
+	 struct flight book[10];
+	 
+    char user[50], pw[50], adminu[50]="fast", adminpw[50]="1234";
+    
+    
+    float total;
+    
+    char repeat;
+    
+	 printf("\n");
+	
+	 printf("\n");
+	 printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	 printf("\n");
+
+    printf("\n \t \t Enter username: ");
+    
+    scanf("%s", &user);
+    
+    printf("\n \t \t Enter password: ");
+    
+    scanf("%s", &pw);
+    
+    system("cls");
+    
+    if (strcmp(user, adminu)==0 && strcmp(pw, adminpw)==0)
+    {
+	 
+
+	 printf("\n");
+	
+	 printf("\n");
+	 printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	 printf("\n");
+	 
+	 printf("                          Welcome to Fast Airline");
+	 printf("\n");
+	 printf("             \xDB\xDB\xDB\xDB\xB2 1. Reservation               ");
+	 printf("\n");
+	 printf("               \n             \xDB\xDB\xDB\xDB\xB2 2. Cancellation\n                    ");
+	 printf("               \n             \xDB\xDB\xDB\xDB\xB2 3. Display Layout\n                    ");
+	 printf("               \n             \xDB\xDB\xDB\xDB\xB2 4. Exit\n                    ");
+	 printf("\n");
+	 printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+     
+	 printf("\n \n \t \t Enter Your Choice");
+	 scanf("%d",&n);
+	 system("cls");
+	 
+     switch(n)
+     {
+     	int n1;
+		 case 1:
+     		
+	          printf("\n");
+	
+	          printf("\n");
+	          printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	          printf("\n");
+	 
+	          printf("                          TICKET RESERVATION SYSTEM ");
+	          printf("\n");
+	          printf("             \xDB\xDB\xDB\xDB\xB2 1. Business Class               ");
+	          printf("\n");
+	          printf("               \n             \xDB\xDB\xDB\xDB\xB2 2. First Class\n                    ");
+	          printf("               \n             \xDB\xDB\xDB\xDB\xB2 3. Economic Class\n                    ");
+	          printf("               \n             \xDB\xDB\xDB\xDB\xB2 4. Exit\n                    ");
+	          printf("\n");
+	          printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	          
+			printf("\n \n \t \t Enter Your Choice");
+			  scanf("%d",&n1);
+	          system("cls");
+	          
+	          switch(n1)
+	          {
+	          	case 1:
+	          		printf("\n");
+	
+	                printf("\n");
+	                printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	                printf("\n");
+	 
+	                printf("                          Welcome to Business Class ");
+	                printf("\n");
+	                printf("\n");
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your name:\n                    ");
+	                
+	                gets(name);
+	                gets(name);
+	
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your address:\n                    ");
+	                
+	                gets(address);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your NIC No. (#####-#######-#):\n                    ");
+	                
+	                gets(nic);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter  booking date:\n                    ");
+	                
+	                gets(date);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your phone No.:\n                    ");
+	                
+	                gets(p_no);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your Account No.:\n                    ");
+	                
+	                gets(a_no);
+
+					printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your departure destination:\n                    ");
+					
+					gets(dep);
+					
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your arival destination:\n                    ");
+	                
+	                gets(ari);
+
+	                
+					printf("\n");
+					
+					
+					break;
+	          	
+	          	case 2:
+	          		printf("\n");
+	
+	                printf("\n");
+	                printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	                printf("\n");
+	 
+	                printf("                          Welcome to First Class ");
+	                printf("\n");
+	                printf("\n");
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your name:\n                    ");
+	                
+	                gets(name);
+	                gets(name);
+	
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your address:\n                    ");
+	                
+	                gets(address);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your NIC No. (#####-#######-#):\n                    ");
+	                
+	                gets(nic);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter  booking date:\n                    ");
+	                
+	                gets(date);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your phone No.:\n                    ");
+	                
+	                gets(p_no);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your Account No.:\n                    ");
+	                
+	                gets(a_no);
+
+					printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your departure destination:\n                    ");
+					
+					gets(dep);
+					
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your arival destination:\n                    ");
+	                
+	                gets(ari);
+
+					
+					break;
+				  
+				case 3:
+					printf("\n");
+	
+	                printf("\n");
+	                printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+	                printf("\n");
+	 
+	                printf("                          Welcome to Economic Class ");
+	                printf("\n");
+	                printf("\n");
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your name:\n                    ");
+	                
+	                gets(name);
+	                gets(name);
+	
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your address:\n                    ");
+	                
+	                gets(address);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your NIC No. (#####-#######-#):\n                    ");
+	                
+	                gets(nic);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter  booking date:\n                    ");
+	                
+	                gets(date);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your phone No.:\n                    ");
+	                
+	                gets(p_no);
+
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your Account No.:\n                    ");
+	                
+	                gets(a_no);
+
+					printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your departure destination:\n                    ");
+					
+					gets(dep);
+					
+	                printf("               \n             \xDB\xDB\xDB\xDB\xB2--- Enter your arival destination:\n                    ");
+	                
+	                gets(ari);
+					
+					break;
+				
+				case 4:
+				default:
+	          	    printf("               \n             \xDB\xDB\xDB\xDB\xB2 THANKYOU FOR VISITING FAST AIRLINES:\n                    ");
+	          		printf("\n");
+	          		printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+					break;
+			  }
+			  
+			  case 2:			  	
+
+struct airline
+{
+	char nic[100];
+	char name[100];
+    char ari[100];
+	int seat_num;
+	char address[100];
+	struct airline *following;
+}
+
+*begin, *stream;
+struct airline *dummy;
+	stream = begin;
+	system("cls");
+	char nic[100];
+	printf("\n\n Enter NIC number to delete record?:");
+	gets(nic); fflush(stdin);
+	if (strcmp(begin->nic, nic) == 0)
+	{
+		dummy = begin;
+		begin = begin->following;
+		free(dummy);
+		printf(" booking has been deleted");
+		Sleep(800);
+		return;
+
+	}
+
+	while (stream->following)
+	{
+		if (strcmp(stream->following->nic, nic) == 0)
+		{
+			dummy = stream->following;
+			stream->following = stream->following->following;
+			free(dummy);
+			printf("has been deleted ");
+			getch();
+			Sleep(800);
+			return;
+		}
+		stream = stream->following;
+	}
+	printf("passport number is wrong please check your NIC");			  
+			  
+			  	break;
+			  	
+			case 3:
+			printf("\n");
+			printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+
+			printf("               \n             \xDB\xDB\xDB\xDB\xB2 Your providing details are:\n                    ");
+			printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",name);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",address);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",nic);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",date);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",p_no);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",a_no);
+			printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",dep);
+	        printf("               \n             \xDB\xDB\xDB\xDB\xB2--- %s\n                    ",ari);
+			printf("\n");
+			printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");		
+			
+	
+			default:
+			   printf("               \n             \xDB\xDB\xDB\xDB\xB2 INVALID CHOICE\n                    ");
+	           printf("\n");
+	           printf("                    \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+
+			  break;
+}
+
+}
+
+else{
+	
+	
+ printf("\nInvalid login");
+
+	
+}
+
+
+
+}
